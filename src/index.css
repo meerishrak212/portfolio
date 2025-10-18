@@ -1,0 +1,16 @@
+/* TailwindCSS imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* This is the magic class! 
+  It adds a margin above the scroll target to offset the sticky header.
+*/
+.scroll-target {
+  scroll-margin-top: 100px; /* Adjust this value based on your header's height */
+}
